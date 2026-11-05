@@ -1,0 +1,49 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+}
+
+.center { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh; /*100% de la hauteur du viewport*/
+}
+
+.fullbody {
+    background-color: white;
+    max-width: 320px;
+    max-height: 499px;
+    padding-inline: 16px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+}
+
+h1 {
+    margin-top: 24px;
+    color: hsl(218, 44%, 22%);
+    font-family: "Outfit", serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+
+.content {
+    margin-inline: 16px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.maintxt {
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(216, 15%, 48%);
+    text-align: center;
+}
+
