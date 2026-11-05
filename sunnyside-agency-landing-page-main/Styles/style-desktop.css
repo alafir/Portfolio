@@ -1,0 +1,402 @@
+@media screen and (min-width: 769px) {
+
+    :root {
+        --grey950: hsl(212, 27%, 19%);
+        --grey600: hsl(213, 9%, 39%);
+        --grey550: hsl(232, 10%, 55%);
+        --grey400: hsl(210, 4%, 67%);
+        --barlow: "Barlow", serif;
+        --frau: "Fraunces", serif;
+        --green500: hsl(167, 34%, 41%);
+        --yellow: hsl(51, 100%, 49%);
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header {
+        background-image: url("../images/desktop/image-header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        height: 50rem;
+    }
+
+    .logo {
+        max-width: 100%;
+        margin-left: 2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-family: var(--frau);
+        font-weight: 900;
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .head-nav {
+        gap: 15rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .menu-section {
+        padding-top: 1rem;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .menu li {
+        font-size: 1.5rem;
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu li:last-child {
+        background-color: white;
+        font-family: var(--frau);
+        font-weight: 900;
+        color: var(--grey950);
+        padding-block: 1.5rem;
+        border-radius: 3rem;
+        padding-inline: 3rem;
+    }
+
+    .arrow {
+        display: block;
+        margin: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .eggs {
+        background-image: url("../images/desktop/image-transform.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 60rem;
+        max-height: 100%;
+        width: 100%;
+        grid-column: 2 / 3;
+    }
+
+    h2 {
+        font-family: var(--frau);
+        font-weight: 700;
+        color: var(--grey950);
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .transform {
+        text-align: left;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-content: center;
+        margin-inline: 5rem;
+
+        button {
+            text-transform: uppercase;
+            border: transparent;
+            background: linear-gradient(to bottom, transparent 50%, yellow);
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 30px;
+            margin-left: 8rem;
+            cursor: pointer;
+        }
+    }
+
+    .transform p {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-family: var(--barlow);
+        font-weight: 600;
+        line-height: 1.5;
+        color: var(--grey400);
+        text-align: left;
+        padding-inline: 8rem;
+    }
+
+    .transform h2,
+    .stand h2 {
+        text-align: left;
+        padding-inline: 8rem;
+    }
+
+
+
+    .cup {
+        background-image: url("../images/desktop/image-stand-out.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 60rem;
+        max-height: 100%;
+        width: 100%;
+        grid-column: 1 / 2;
+    }
+
+    .stand {
+        text-align: left;
+        grid-column: 2 / 3;
+        align-content: center;
+        margin-inline: 5rem;
+
+        button {
+            text-transform: uppercase;
+            border: transparent;
+            background: linear-gradient(to bottom, transparent 50%, yellow);
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 30px;
+            margin-left: 8rem;
+            cursor: pointer;
+        }
+    }
+
+
+    .stand p {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-family: var(--barlow);
+        font-weight: 600;
+        line-height: 1.5;
+        color: var(--grey400);
+        text-align: left;
+        padding-inline: 8rem;
+    }
+
+    .graphic {
+        background-image: url("../images/desktop/image-graphic-design.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 62rem;
+        max-height: 100%;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        grid-column: 1 / 2;
+    }
+
+    .graph-content h2 {
+        font-family: var(--frau);
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: var(--grey950);
+        padding-bottom: 3rem;
+    }
+
+    .graph-content p {
+        font-family: var(--barlow);
+        color: var(--grey600);
+        font-weight: 600;
+        padding-inline: 15rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .graph-content {
+        position: absolute;
+        bottom: 4rem;
+    }
+
+    .photography {
+        background-image: url("../images/desktop/image-photography.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 62rem;
+        max-height: 100%;
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .photo-content h2 {
+        font-family: var(--frau);
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: var(--grey950);
+        padding-bottom: 3rem;
+    }
+
+    .photo-content p {
+        font-family: var(--barlow);
+        color: var(--grey600);
+        font-weight: 600;
+        padding-inline: 15rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .photo-content {
+        position: absolute;
+        bottom: 4rem;
+    }
+
+    .client {
+        text-align: center;
+        margin-inline: 5rem;
+    }
+
+    .client-container {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .client-container img {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+    }
+
+    .client h3 {
+        font-size: 2rem;
+        color: var(--grey400);
+        font-family: var(--frau);
+        font-weight: 700;
+        margin-block: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+    }
+
+    .client-info > p {
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: var(--grey600);
+        line-height: 1.5;
+        padding-block: 5rem;
+        padding-inline: 1rem;
+    }
+
+    .nameplate {
+        line-height: 1.5;
+        padding-bottom: 1rem;
+    }
+
+    .nameplate p:first-child {
+        font-family: var(--frau);
+        font-weight: 900;
+        color: var(--grey950);
+    }
+
+    .nameplate p:last-child {
+        font-family: var(--barlow);
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: var(--grey400);
+        padding-top: 0.2rem;
+    }
+
+    .bottom-pics {
+        display: flex;
+        margin-top: 4rem;
+    }
+
+    .milk {
+        background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 37.5rem;
+    }
+
+    .orange {
+        background-image: url("../images/desktop/image-gallery-orange.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 37.5rem;
+    }
+
+    .cone {
+        background-image: url("../images/desktop/image-gallery-cone.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 37.5rem;
+    }
+
+    .sugar {
+        background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 37.5rem;
+    }
+
+    footer {
+        background-color: var(--green500);
+        padding-block: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot-nav p {
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: var(--grey600);
+    }
+
+    footer>p {
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: var(--grey950);
+        font-size: 3rem;
+    }
+
+    .foot-nav {
+        padding-block: 5rem;
+        gap: 3rem;
+    }
+
+    .socials {
+        gap: 3rem;
+    }
+}

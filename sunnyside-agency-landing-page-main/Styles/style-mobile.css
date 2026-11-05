@@ -1,0 +1,397 @@
+@media screen and (max-width: 768px) {
+    
+    :root {
+        --grey950 : hsl(212, 27%, 19%);
+        --grey600 : hsl(213, 9%, 39%);
+        --grey550 : hsl(232, 10%, 55%);
+        --grey400 : hsl(210, 4%, 67%);
+        --barlow : "Barlow", serif;
+        --frau : "Fraunces", serif;
+        --green500 : hsl(167, 34%, 41%);
+        --yellow : hsl(51, 100%, 49%);
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header {
+        background-image: url("../images/mobile/image-header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        height: 50rem;
+        max-height: 100%;
+    }
+
+    .logo {
+        width: 9.5rem;
+        max-width: 100%;
+        padding-top: 1rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+
+    h1 {
+        font-family: var(--frau);
+        font-weight: 900;
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .head-nav {
+        gap: 15rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .menu-section {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        transform: translate(-50%, 70%) scale(1);
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .icon {
+        height: 2rem;
+        width: 2.5rem;
+        cursor: pointer;
+    }
+
+    .icon img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu-toggle {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .menu-toggle:checked ~ .menu {
+        opacity: 1;
+        background-color: white;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .menu li {
+        font-size: 20px;
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: var(--grey550);
+        cursor: pointer;
+    }
+
+    .menu li:last-child {
+        background-color: var(--yellow);
+        font-family: var(--frau);
+        font-weight: 900;
+        color: var(--grey950);
+        padding: 1.5rem;
+        border-radius: 50%;
+    }
+
+    .arrow {
+        display: block;
+        margin: 30px;
+    }
+
+    .eggs {
+        background-image: url("../images/mobile/image-transform.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 32rem;
+        max-height: 100%;
+    }
+
+    h2 {
+        font-family: var(--frau);
+        font-weight: 700;
+        color: var(--grey950);
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .transform {
+        padding-inline: 2rem;
+        padding-block: 4rem;
+        text-align: center;
+    }
+
+    .transform p {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-family: var(--barlow);
+        font-weight: 600;
+        line-height: 1.5;
+        color: var(--grey400);
+    }
+
+    button {
+        text-transform: uppercase;
+        border: transparent;
+        background: linear-gradient(to bottom, transparent 50%, yellow);
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 30px;
+        
+    }
+
+    .cup {
+        background-image: url("../images/mobile/image-stand-out.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 32rem;
+        max-height: 100%;
+    }
+
+    .stand {
+        padding-inline: 2rem;
+        padding-block: 4rem;
+        text-align: center;
+    }
+
+    .stand p {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-family: var(--barlow);
+        font-weight: 600;
+        line-height: 1.5;
+        color: var(--grey400);
+    }
+
+    .graphic {
+        background-image: url("../images/mobile/image-graphic-design.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 62rem;
+        max-height: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .graph-content h2 {
+        font-family: var(--frau);
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: var(--grey950);
+        padding-bottom: 3rem;
+    }
+
+    .graph-content p {
+        font-family: var(--barlow);
+        color: var(--grey600);
+        font-weight: 600;
+        padding-inline: 2rem;
+    }
+
+    .graph-content {
+        position: absolute;
+        bottom: 4rem;
+    }
+
+    .photography {
+        background-image: url("../images/mobile/image-photography.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 62rem;
+        max-height: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .photo-content h2 {
+        font-family: var(--frau);
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: var(--grey950);
+        padding-bottom: 3rem;
+    }
+
+    .photo-content p {
+        font-family: var(--barlow);
+        color: var(--grey600);
+        font-weight: 600;
+        padding-inline: 2rem;
+    }
+
+    .photo-content {
+        position: absolute;
+        bottom: 4rem;
+    }
+
+    .client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+        margin-inline: 3rem;
+    }
+
+    .client img {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+    }
+
+    .client h3 {
+        font-size: 2rem;
+        color: var(--grey400);
+        font-family: var(--frau);
+        font-weight: 700;
+        margin-block: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+    }
+
+    .client-info > p {
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: var(--grey600);
+        line-height: 1.5;
+        padding-block: 3rem;
+    }
+
+    .nameplate {
+        line-height: 1.5;
+        padding-bottom: 1rem;
+    }
+
+    .nameplate p:first-child{
+        font-family: var(--frau);
+        font-weight: 900;
+        color: var(--grey950);
+    }
+
+    .nameplate p:last-child {
+        font-family: var(--barlow);
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: var(--grey400);
+        padding-top: 0.2rem;
+    }
+
+    .bottom-pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    .milk {
+        background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 20rem;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .orange {
+        background-image: url("../images/mobile/image-gallery-orange.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 20rem;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .cone {
+        background-image: url("../images/mobile/image-gallery-cone.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 20rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .sugar {
+        background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 20rem;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+    }
+
+    footer {
+        height: 20rem;
+        background-color: var(--green500);
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot-nav p {
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: var(--grey600);
+    }
+
+    footer > p {
+        font-family: var(--barlow);
+        font-weight: 600;
+        color: var(--grey950);
+        font-size: 3rem; 
+    }
+
+    .foot-nav {
+        padding-block: 5rem;
+        margin-inline: 2rem;
+    }
+
+    .socials {
+        margin-inline: 10rem;
+    }
+
+}
+
+
+
+
